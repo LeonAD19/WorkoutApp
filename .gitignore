@@ -1,31 +1,37 @@
-# Created by venv; see https://docs.python.org/3/library/venv.html
+# -------------------------------
+# Python / Flask ignores
+# -------------------------------
 venv/
-
-pyvenv.cfg
-
 __pycache__/
-
+pyvenv.cfg
 .env
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+server/__pycache__/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# -------------------------------
+# Node / React ignores
+# -------------------------------
+client/node_modules/
+client/build/
+client/.pnp
+client/.pnp.js
 
-# testing
-/coverage
+# -------------------------------
+# Logs
+# -------------------------------
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# production
-/build
-
-# misc
-.DS_Store
+# -------------------------------
+# Environment files
+# -------------------------------
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# -------------------------------
+# Misc
+# -------------------------------
+.DS_Store
+coverage/
